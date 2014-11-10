@@ -1,0 +1,25 @@
+//Prefixes
+
+@mixin border-box() {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+@mixin transition($arguments: .3s all ease-in-out) {
+	-webkit-transition: $arguments;
+	-moz-transition: $arguments;
+	-o-transition: $arguments;
+	-ms-transition: $arguments;
+	transition: $arguments;
+}
+
+@mixin transform($arguments) {
+	-webkit-transform: $arguments;
+	-moz-transform: $arguments;
+	-ms-transform: $arguments;
+	-o-transform: $arguments;
+	transform: $arguments;
+}

@@ -1,0 +1,7 @@
+{# Single post twig template - Use it for what a single post might look like #}
+{% if post %}
+  <div class="post">
+    <h1>{{ post.title }}</h1>
+    <p>{{post.content }}</p>
+  </div>
+{% endif %}

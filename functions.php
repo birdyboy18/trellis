@@ -17,6 +17,9 @@ function add_to_context($data) {
 add_action('wp_enqueue_scripts', 'add_scripts');
 
 function add_scripts() {
+  //Load in jquery from google CDN, if you need to use it, add it as a dependancy
+  wp_deregister_script('jquery');
+  wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js", false, true);
   //Load in a main js folder with no depedancies, no version and added in the footer
   wp_register_script('main', get_stylesheet_directory_uri() . '/js/main.js', null, null, true);
   wp_enqueue_script('main');

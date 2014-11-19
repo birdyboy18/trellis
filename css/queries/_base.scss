@@ -1,1 +1,54 @@
 //base styles for everything that isn't width specific
+
+/*================================
+TYPOGRAPHIC SETTINGS
+=================================*/
+
+$base-font-size: 1rem;
+$base-line-height: 1.5rem;
+$measure: 760px; //47.5rem
+
+$h1-font-size: 1rem*1.5*1.5*1.5; //3.375rem
+$h1-line: 1.5rem;
+$h1-lines: 3;
+$h1-line-height: $h1-line * $h1-lines;
+$h1-margin-top: 2 * $h1-line;
+$h1-margin-bottom: 1 * $h1-line;
+
+$h2-font-size: 1rem*1.5*1.5;
+$h2-line: 1.5rem;
+$h2-lines: 2;
+$h2-line-height: $h2-line * $h2-lines;
+$h2-margin-top: 2 * $h2-line;
+$h2-margin-bottom: 1 * $h2-line;
+
+$h3-font-size: 1rem*1.5;
+$h3-line: 1.5rem;
+$h3-lines: 1.5;
+$h3-line-height: $h3-line * $h3-lines;
+$h3-margin-top: 1 * $h3-line;
+$h3-margin-bottom: 1 * $h3-line;
+
+$h4-font-size: 1rem;
+$h4-line: 1.5rem;
+$h4-lines: 1;
+$h4-line-height: $h4-line * $h4-lines;
+$h4-margin-top: 1 * $h4-line;
+$h4-margin-bottom: 1 * $h4-line;
+
+/*================================
+TINY RESET
+=================================*/
+
+* {
+	@include border-box();
+}
+
+html, body {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	height: 100%;
+	width: 100%;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}

@@ -1,7 +1,10 @@
 {# 404 page all styles are added inline, naughty I know, but it keeps the css clean #}
+{% extends 'base.twig' %}
 {% block content %}
-<div style="height: 100%; width:100%;background:url({{ theme.uri }}/media/forest.jpg) no-repeat 50% 50%;background-size:cover;">
-  <h1 class="h1" style="text-algin:center;color:#fff;margin-top:200px;">We're sorry, we can't find that page</h1>
-  <a style="position:absolute;bottom:0;right:0;display:inline-block;color:#fff;text-decoration:none;" href="http://www.reddit.com/r/EarthPorn/comments/1w7wjx/during_a_walk_in_the_forest_with_my_friend_south/">by linneaun</a>
+<div style="height: 100%; width:100%;background:url({{ theme.uri }}/media/forest.jpg) no-repeat 50% 50%;background-size:cover;position:absolute;top:0;left:0;padding:200px 0 0 0;">
+  <h1 style="position:absolute;top:20px;left:20px;color:rgba(255,255,255,0.3); font-size:7.6rem;">404</h1>
+  <h1 class="h1" style="text-align:center;color:#fff;">Uh oh, it appears we've lost the page</h1>
+  <p style="text-align:center;color:rgba(255,255,255,0.8);">You may of mis-spelt something or the links is missing, either way we didn't find the page - sorry</p>
+  <a style="position:absolute;bottom:20px;right:20px;display:inline-block;color:rgba(255,255,255,0.3);text-decoration:none;font-size:.875rem;" href="http://www.reddit.com/r/EarthPorn/comments/1w7wjx/during_a_walk_in_the_forest_with_my_friend_south/" target="_blank">photo taken by linneaun</a>
 </div>
 {% endblock %}
